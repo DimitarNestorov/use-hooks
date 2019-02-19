@@ -15,21 +15,23 @@ yarn add use-hooks
 ```
 
 ## Available hooks
-- [useAnimation](https://usehooks.com/useAnimation/)
-- [useDarkMode](https://usehooks.com/useDarkMode/)
+- [useAnimation](https://usehooks.com/useAnimation/)\*
+- [useDarkMode](https://usehooks.com/useDarkMode/)\*
 - [useDebounce](https://usehooks.com/useDebounce/)
-- [useHistory](https://usehooks.com/useHistory/)
+- [useHistory](https://usehooks.com/useHistory/)\*
 - [useHover](https://usehooks.com/useHover/)
-- [useKeyPress](https://usehooks.com/useKeyPress/)
+- [useKeyPress](https://usehooks.com/useKeyPress/)\*
 - [useLocalStorage](https://usehooks.com/useLocalStorage/)
 - [useLockBodyScroll](https://usehooks.com/useLockBodyScroll/)
-- [useMedia](https://usehooks.com/useMedia/)
-- [useOnClickOutside](https://usehooks.com/useOnClickOutside/)
-- [useOnScreen](https://usehooks.com/useOnScreen/)
+- [useMedia](https://usehooks.com/useMedia/)\*
+- [useOnClickOutside](https://usehooks.com/useOnClickOutside/)\*
+- [useOnScreen](https://usehooks.com/useOnScreen/)\*
 - [usePrevious](https://usehooks.com/usePrevious/)
-- [useScript](https://usehooks.com/useScript/)
+- [useScript](https://usehooks.com/useScript/)\*
 - [useTheme](https://usehooks.com/useTheme/)
-- [useWindowSize](https://usehooks.com/useWindowSize/)
+- [useWindowSize](https://usehooks.com/useWindowSize/)\*
+
+Hooks marked with "\*" have minor differences (read below).
 
 ## Differences
 
@@ -69,7 +71,11 @@ Added `initialValue` to the `clear` callbacks dependencies.
 
 ### useKeyPress
 
-A third `useDependencies` argument was added allowing the effect to re-run when arguments change.
+A second `useDependencies` argument was added allowing the effect to re-run when arguments change.
+
+### useMedia
+
+A fourth `useDependencies` argument was added allowing the effect to re-run when arguments change.
 
 ### useOnClickOutside
 

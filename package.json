@@ -1,0 +1,63 @@
+{
+	"name": "use-hooks",
+	"version": "2.0.0-rc.0",
+	"description": "https://usehooks.com as an npm package with TypeScript type definitions",
+	"main": "dist/commonjs/index.js",
+	"module": "dist/es2015/index.js",
+	"repository": "git@github.com:dimitarnestorov/use-hooks.git",
+	"license": "MIT",
+	"author": "Gabe Ragland <gabe.ragland@gmail.com>",
+	"contributors": [
+		"Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)"
+	],
+	"scripts": {
+		"lint": "eslint ./src/**/*.ts",
+		"build.commonjs": "tsc",
+		"build.es2015": "tsc --outDir dist/es2015 --module es2015 --moduleResolution node",
+		"build": "rimraf ./dist && yarn run build.commonjs && yarn run build.es2015",
+		"prepublishOnly": "yarn run build",
+		"test": "yarn run build"
+	},
+	"dependencies": {
+		"@types/react": "^16.8.3"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^1.4.0",
+		"@typescript-eslint/parser": "^1.4.0",
+		"eslint": "^5.14.1",
+		"eslint-config-prettier": "^4.0.0",
+		"eslint-plugin-prettier": "^3.0.1",
+		"eslint-plugin-react-hooks": "^1.1.0-alpha.1",
+		"react": "^16.8.2",
+		"rimraf": "^2.6.3",
+		"typescript": "^3.3.3",
+		"usehooks": "gragland/usehooks#96ed23e28f4c2d01df029a7a2632f61ef59db1ac"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0"
+	},
+	"eslintIgnore": [
+		"node_modules",
+		"dist"
+	],
+	"eslintConfig": {
+		"parser": "@typescript-eslint/parser",
+		"plugins": [
+			"react-hooks"
+		],
+		"extends":  [
+			"plugin:@typescript-eslint/recommended",
+			"prettier/@typescript-eslint",
+			"plugin:prettier/recommended"
+		],
+		"parserOptions":  {
+			"ecmaVersion": 5,
+			"sourceType": "module"
+		},
+		"rules": {
+			"@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
+			"react-hooks/rules-of-hooks": "error",
+			"react-hooks/reactive-deps": "error"
+		}
+	}
+}

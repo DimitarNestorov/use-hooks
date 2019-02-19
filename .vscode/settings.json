@@ -1,0 +1,13 @@
+{
+	"editor.insertSpaces": false,
+	"eslint.validate":  [
+		{
+			"language": "typescript",
+			"autoFix": true,
+		},
+		{
+			"language": "typescriptreact",
+			"autoFix": true,
+		},
+	],
+}

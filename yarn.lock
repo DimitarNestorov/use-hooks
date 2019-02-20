@@ -10302,9 +10302,9 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
-usehooks@gragland/usehooks#094e5bd0db90647bfa6641ca694d0ff744d2a080:
+usehooks@gragland/usehooks#96ed23e28f4c2d01df029a7a2632f61ef59db1ac:
   version "1.0.0"
-  resolved "https://codeload.github.com/gragland/usehooks/tar.gz/094e5bd0db90647bfa6641ca694d0ff744d2a080"
+  resolved "https://codeload.github.com/gragland/usehooks/tar.gz/96ed23e28f4c2d01df029a7a2632f61ef59db1ac"
   dependencies:
     babel-plugin-styled-components "^1.10.0"
     gatsby "^2.0.85"

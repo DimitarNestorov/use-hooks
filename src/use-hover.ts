@@ -5,8 +5,8 @@ export function useHover<T>(): [MutableRefObject<T>, boolean] {
 
 	const ref = useRef(null)
 
-	const node = ref.current
 	useEffect(() => {
+		const node = ref.current
 		if (node) {
 			const handleMouseOver = (): void => setValue(true)
 			const handleMouseOut = (): void => setValue(false)
@@ -19,7 +19,8 @@ export function useHover<T>(): [MutableRefObject<T>, boolean] {
 				node.removeEventListener('mouseout', handleMouseOut)
 			}
 		}
-	}, [node]) // Recall only if ref changes
+		// eslint-disable-next-line react-hooks/reactive-deps
+	}, [ref.current]) // Recall only if ref changes
 
 	return [ref, value]
 }

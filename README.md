@@ -1,6 +1,6 @@
 # use-hooks
 
-[![npm version](https://badge.fury.io/js/use-hooks.svg)](https://www.npmjs.com/package/use-hooks)
+[![npm version](https://badge.fury.io/js/use-hooks.svg)](https://www.npmjs.com/package/use-hooks) [![Greenkeeper badge](https://badges.greenkeeper.io/dimitarnestorov/use-hooks.svg)](https://greenkeeper.io/)
 
 [https://usehooks.com](https://usehooks.com) as an npm package with TypeScript type definitions.
 

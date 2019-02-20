@@ -15,21 +15,21 @@ yarn add use-hooks
 ```
 
 ## Available hooks
-- [useAnimation](https://usehooks.com/useAnimation/)\*
-- [useDarkMode](https://usehooks.com/useDarkMode/)\*
-- [useDebounce](https://usehooks.com/useDebounce/)
-- [useHistory](https://usehooks.com/useHistory/)\*
-- [useHover](https://usehooks.com/useHover/)
-- [useKeyPress](https://usehooks.com/useKeyPress/)\*
-- [useLocalStorage](https://usehooks.com/useLocalStorage/)
-- [useLockBodyScroll](https://usehooks.com/useLockBodyScroll/)
-- [useMedia](https://usehooks.com/useMedia/)\*
-- [useOnClickOutside](https://usehooks.com/useOnClickOutside/)\*
-- [useOnScreen](https://usehooks.com/useOnScreen/)\*
-- [usePrevious](https://usehooks.com/usePrevious/)
-- [useScript](https://usehooks.com/useScript/)\*
-- [useTheme](https://usehooks.com/useTheme/)
-- [useWindowSize](https://usehooks.com/useWindowSize/)\*
+- [useAnimation](https://usehooks.com/useAnimation/)\* ([demo](https://codesandbox.io/s/7j04olj760))
+- [useDarkMode](https://usehooks.com/useDarkMode/)\* ([demo](https://codesandbox.io/s/40m8ovpzr7))
+- [useDebounce](https://usehooks.com/useDebounce/) ([demo](https://codesandbox.io/s/91lo30r4wo))
+- [useHistory](https://usehooks.com/useHistory/)\* ([demo](https://codesandbox.io/s/5382vkz054))
+- [useHover](https://usehooks.com/useHover/) ([demo](https://codesandbox.io/s/8lj6jpn3o9))
+- [useKeyPress](https://usehooks.com/useKeyPress/)\* ([demo](https://codesandbox.io/s/jyml5p003))
+- [useLocalStorage](https://usehooks.com/useLocalStorage/) ([demo](https://codesandbox.io/s/q3q2nn21j6))
+- [useLockBodyScroll](https://usehooks.com/useLockBodyScroll/) ([demo](https://codesandbox.io/s/vq0wz0y87l))
+- [useMedia](https://usehooks.com/useMedia/)\* ([demo](https://codesandbox.io/s/xlln407mz4))
+- [useOnClickOutside](https://usehooks.com/useOnClickOutside/)\* ([demo](https://codesandbox.io/s/rrqrvy13yq))
+- [useOnScreen](https://usehooks.com/useOnScreen/)\* ([demo](https://codesandbox.io/s/j21q4m6l85))
+- [usePrevious](https://usehooks.com/usePrevious/) ([demo](https://codesandbox.io/s/34llmr78x1))
+- [useScript](https://usehooks.com/useScript/)\* ([demo](https://codesandbox.io/s/k9lv484n4o))
+- [useTheme](https://usehooks.com/useTheme/) ([demo](https://codesandbox.io/s/zy4l76ozm))
+- [useWindowSize](https://usehooks.com/useWindowSize/)\* ([demo](https://codesandbox.io/s/6j22r2y623))
 
 Hooks marked with "\*" have minor differences (read below).
 

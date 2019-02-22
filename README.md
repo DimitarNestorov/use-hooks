@@ -29,7 +29,7 @@ yarn add use-hooks
 - [usePrevious](https://usehooks.com/usePrevious/) ([demo](https://codesandbox.io/s/34llmr78x1))
 - [useScript](https://usehooks.com/useScript/)\* ([demo](https://codesandbox.io/s/k9lv484n4o))
 - [useTheme](https://usehooks.com/useTheme/) ([demo](https://codesandbox.io/s/zy4l76ozm))
-- [useWhyDidYouUpdate](https://usehooks.com/useWhyDidYouUpdate/)\* ([demo](https://codesandbox.io/s/kx0p932lpr))
+- [useWhyDidYouUpdate](https://usehooks.com/useWhyDidYouUpdate/) ([demo](https://codesandbox.io/s/kx0p932lpr))
 - [useWindowSize](https://usehooks.com/useWindowSize/)\* ([demo](https://codesandbox.io/s/6j22r2y623))
 
 Hooks marked with "\*" have minor differences (read below).

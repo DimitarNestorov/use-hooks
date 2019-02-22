@@ -2,12 +2,7 @@
 
 import { useRef, useEffect } from 'react'
 
-interface AnyProps {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	[key: string]: any
-}
-
-export function useWhyDidYouUpdate(name: string, props: AnyProps): void {
+export function useWhyDidYouUpdate<T>(name: string, props: { [key: string]: T }): void {
 	// Get a mutable ref object where we can store props ...
 	// ... for comparison next time this hook runs.
 	const previousProps = useRef(undefined)
@@ -17,7 +12,7 @@ export function useWhyDidYouUpdate(name: string, props: AnyProps): void {
 			// Get all keys from previous and current props
 			const allKeys = Object.keys({ ...previousProps.current, ...props })
 			// Use this object to keep track of changed props
-			const changesObj: AnyProps = {}
+			const changesObj: { [key: string]: { from: T; to: T } } = {}
 			// Iterate through keys
 			allKeys.forEach(key => {
 				// If previous is different from current

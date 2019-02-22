@@ -27,10 +27,11 @@
 		"eslint": "^5.14.1",
 		"eslint-config-prettier": "^4.0.0",
 		"eslint-plugin-prettier": "^3.0.1",
-		"eslint-plugin-react-hooks": "^1.1.0-alpha.1",
-		"react": "^16.8.2",
+		"eslint-plugin-react-hooks": "^1.2.0",
+		"prettier": "^1.16.4",
+		"react": "^16.8.3",
 		"rimraf": "^2.6.3",
-		"typescript": "^3.3.3"
+		"typescript": "^3.3.3333"
 	},
 	"peerDependencies": {
 		"react": "^16.8.0"
@@ -44,19 +45,24 @@
 		"plugins": [
 			"react-hooks"
 		],
-		"extends":  [
+		"extends": [
 			"plugin:@typescript-eslint/recommended",
 			"prettier/@typescript-eslint",
 			"plugin:prettier/recommended"
 		],
-		"parserOptions":  {
+		"parserOptions": {
 			"ecmaVersion": 5,
 			"sourceType": "module"
 		},
 		"rules": {
-			"@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
+			"@typescript-eslint/no-use-before-define": [
+				"error",
+				{
+					"functions": false
+				}
+			],
 			"react-hooks/rules-of-hooks": "error",
-			"react-hooks/reactive-deps": "error"
+			"react-hooks/exhaustive-deps": "error"
 		}
 	}
 }

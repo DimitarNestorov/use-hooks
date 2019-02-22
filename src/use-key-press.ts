@@ -29,7 +29,7 @@ export function useKeyPress(targetKey: string, useDependencies: true): boolean {
 				window.removeEventListener('keyup', upHandler)
 			}
 		},
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		useDependencies ? [targetKey] : [], // Empty array ensures that effect is only run on mount and unmount
 	)
 

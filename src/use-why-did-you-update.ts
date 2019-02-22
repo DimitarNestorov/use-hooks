@@ -38,6 +38,6 @@ export function useWhyDidYouUpdate(name: string, props: AnyProps): void {
 
 		// Finally update previousProps with current props for next hook call
 		previousProps.current = props
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, Object.values(props)) // Re-run if props change
 }

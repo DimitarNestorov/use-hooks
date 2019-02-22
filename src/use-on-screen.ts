@@ -26,7 +26,7 @@ export function useOnScreen<T extends Element>(
 				observer.unobserve(ref.current)
 			}
 		},
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		useDependencies ? [ref, rootMargin] : [],
 		// Empty array ensures that effect is only run on mount and unmount
 	)

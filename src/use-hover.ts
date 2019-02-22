@@ -19,7 +19,7 @@ export function useHover<T>(): [MutableRefObject<T>, boolean] {
 				node.removeEventListener('mouseout', handleMouseOut)
 			}
 		}
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [ref.current]) // Recall only if ref changes
 
 	return [ref, value]

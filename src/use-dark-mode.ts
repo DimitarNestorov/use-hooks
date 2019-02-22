@@ -37,7 +37,7 @@ export function useDarkMode(
 		} else {
 			element.classList.remove(className)
 		}
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [enabled]) // Only re-call effect when value changes
 
 	// Return enabled state and setter

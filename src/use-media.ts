@@ -17,7 +17,7 @@ export function useMedia<T>(queries: string[], values: T[], defaultValue: T, use
 	// Array containing a media query list for each query
 	const mediaQueryLists = useMemo(
 		() => queries.map(q => window.matchMedia(q)),
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		useDependencies ? [queries] : [],
 	)
 
@@ -29,7 +29,7 @@ export function useMedia<T>(queries: string[], values: T[], defaultValue: T, use
 			// Return related value or defaultValue if none
 			return typeof values[index] !== 'undefined' ? values[index] : defaultValue
 		},
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		useDependencies ? [mediaQueryLists, values, defaultValue] : [],
 	)
 
@@ -47,7 +47,7 @@ export function useMedia<T>(queries: string[], values: T[], defaultValue: T, use
 			// Remove listeners on cleanup
 			return () => mediaQueryLists.forEach(mql => mql.removeListener(handler))
 		},
-		// eslint-disable-next-line react-hooks/reactive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		useDependencies ? [mediaQueryLists, setValue, getValue] : [],
 	)
 

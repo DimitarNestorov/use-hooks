@@ -30,8 +30,7 @@
 		"eslint-plugin-react-hooks": "^1.1.0-alpha.1",
 		"react": "^16.8.2",
 		"rimraf": "^2.6.3",
-		"typescript": "^3.3.3",
-		"usehooks": "gragland/usehooks#96ed23e28f4c2d01df029a7a2632f61ef59db1ac"
+		"typescript": "^3.3.3"
 	},
 	"peerDependencies": {
 		"react": "^16.8.0"

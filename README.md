@@ -24,7 +24,7 @@ yarn add use-hooks
 - [useLocalStorage](https://usehooks.com/useLocalStorage/) ([demo](https://codesandbox.io/s/q3q2nn21j6))
 - [useLockBodyScroll](https://usehooks.com/useLockBodyScroll/) ([demo](https://codesandbox.io/s/vq0wz0y87l))
 - [useMedia](https://usehooks.com/useMedia/)\* ([demo](https://codesandbox.io/s/xlln407mz4))
-- [useOnClickOutside](https://usehooks.com/useOnClickOutside/)\* ([demo](https://codesandbox.io/s/rrqrvy13yq))
+- [useOnClickOutside](https://usehooks.com/useOnClickOutside/) ([demo](https://codesandbox.io/s/rrqrvy13yq))
 - [useOnScreen](https://usehooks.com/useOnScreen/)\* ([demo](https://codesandbox.io/s/j21q4m6l85))
 - [usePrevious](https://usehooks.com/usePrevious/) ([demo](https://codesandbox.io/s/34llmr78x1))
 - [useScript](https://usehooks.com/useScript/)\* ([demo](https://codesandbox.io/s/k9lv484n4o))
@@ -77,10 +77,6 @@ A second `useDependencies` argument was added allowing the effect to re-run when
 ### useMedia
 
 A fourth `useDependencies` argument was added allowing the effect to re-run when arguments change.
-
-### useOnClickOutside
-
-A third `useDependencies` argument was added allowing the effect to re-run when arguments change.
 
 ### useOnScreen
 

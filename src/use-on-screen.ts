@@ -10,6 +10,7 @@ export function useOnScreen<T extends Element>(
 
 	useEffect(
 		() => {
+			const node = ref.current
 			const observer = new IntersectionObserver(
 				([entry]) => {
 					// Update our state when observer callback fires
@@ -20,10 +21,10 @@ export function useOnScreen<T extends Element>(
 				},
 			)
 			if (ref.current) {
-				observer.observe(ref.current)
+				observer.observe(node)
 			}
 			return () => {
-				observer.unobserve(ref.current)
+				observer.unobserve(node)
 			}
 		},
 		// eslint-disable-next-line react-hooks/exhaustive-deps

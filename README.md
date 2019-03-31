@@ -18,6 +18,7 @@ yarn add use-hooks
 - [useAnimation](https://usehooks.com/useAnimation/)\* ([demo](https://codesandbox.io/s/7j04olj760))
 - [useDarkMode](https://usehooks.com/useDarkMode/)\* ([demo](https://codesandbox.io/s/40m8ovpzr7))
 - [useDebounce](https://usehooks.com/useDebounce/) ([demo](https://codesandbox.io/s/91lo30r4wo))
+- [useEventListener](https://usehooks.com/useEventListener/) ([demo](https://codesandbox.io/s/x7x3w7w3y4))
 - [useHistory](https://usehooks.com/useHistory/)\* ([demo](https://codesandbox.io/s/5382vkz054))
 - [useHover](https://usehooks.com/useHover/) ([demo](https://codesandbox.io/s/8lj6jpn3o9))
 - [useKeyPress](https://usehooks.com/useKeyPress/)\* ([demo](https://codesandbox.io/s/jyml5p003))

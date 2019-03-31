@@ -1,6 +1,7 @@
 export * from './use-animation'
 export * from './use-dark-mode'
 export * from './use-debounce'
+export * from './use-event-listener'
 export * from './use-history'
 export * from './use-hover'
 export * from './use-key-press'

@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "09:00"
+    timezone: Europe/Sofia
+  open-pull-requests-limit: 99
+  versioning-strategy: widen
+  ignore:
+  - dependency-name: "@types/react"
+    versions:
+    - "> 16.8.3, < 16.9"
